@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontaktieren Sie uns</title>
+  <link rel="stylesheet" href="./health_analysis.css">
+  <style>
+    body{
+        text-align: center;
+    }
+    /* Einige grundlegende Stile zu Demonstrationszwecken */
+    #contactForm {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+    }
+    #contactForm button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #contactForm button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <nav><h1>Gesundheitsanalyse Volkszählung</h1>
+    <ul>
+      <li><a href="./index.html" id="home">Startseite </a></li>
+      <li><a href="./health_contact.html" id="contact">Kontaktieren Sie uns </a></li>
+      </li>
+
+    </ul>
+    </nav>
+  <h1>Kontaktieren Sie uns</h1>
+  <p>Fühlen Sie sich frei, uns zu kontaktieren, um mehr über Ihre Erkrankungen und Behandlungsmethoden zu erfahren.</p>
+
+  <form id="contactForm">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="condition">Erkrankung</label>
+      <input type="text" id="condition" name="condition" required>
+    </div>
+    <div>
+      <label for="message">Nachricht</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" onclick="thankyou()">Absenden</button>
+  </form>
+  <script>
+    function thankyou(){
+        alert('Danke, dass Sie uns kontaktiert haben!')
+    }
+  </script>
+</body>
+</html>
